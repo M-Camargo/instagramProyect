@@ -1,0 +1,522 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Helvetica, ;
+}
+
+body {
+    background-color: #FBFBFA;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+
+}
+
+main nav {
+    position: fixed;
+    height: 100vh;
+    width: 245px;
+    border-right: 1px solid #DBDBDB;
+    background-color: #FBFBFA;
+}
+
+main nav ul li {
+    list-style-type: none;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+main nav .menuBottom {
+    margin-top: 50px;
+}
+
+main .iconoNav {
+    width: 110px;
+    height: 33px;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+main nav ul img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.menuLista {
+
+    padding-top: 45px;
+    padding-left: 0px;
+}
+
+
+/* ------------------------------ CONTENIDO PERFIL---------------------------- */
+
+#contenido {
+    padding-left: 246px;
+    z-index: 0;
+}
+
+.contenedorPerfil {
+    display: flex;
+    margin-left: 155px;
+    margin-right: 44px;
+    height: 250px;
+}
+
+
+.contenedorPerfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.informacionPerfil {
+    margin-top: 60px;
+}
+
+
+.tituloPerfil {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #FBFBFA;
+    margin-left: 100px;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.tituloPerfil h2 {
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.tituloPerfil .very {
+
+    margin-left: 7px;
+    margin-right: 30px;
+}
+
+.numerosPerfil {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 18px;
+}
+
+.numerosPerfil p {
+    padding-right: 50px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+#btnSeguir {
+    background-color: #0095f6;
+    color: white;
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+
+}
+
+#btnEnviarMsj {
+    background-color: #EFEFEF;
+    margin-left: 7px;
+    width: 136px;
+    height: 32px;
+    border-radius: 7px;
+}
+
+.btnMore {
+    width: 34px;
+    height: 32px;
+    margin-left: 7px;
+    border-radius: 7px;
+
+}
+
+.btnMore img {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.more {
+    width: 34px;
+    height: 32px;
+    margin-left: 7px;
+    border-radius: 7px;
+}
+
+.descripcionPerfil {
+    margin-left: 100px;
+}
+
+.descripcionPerfil p {
+    font-size: 0.8rem;
+}
+
+
+/*----------------------------DESTACADAS----------------------------*/
+
+#hDestacadas {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 70px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #DBDBDB;
+
+}
+
+#hDestacadas img {
+    cursor: pointer;
+    width: 87px;
+    height: 87px;
+    border-radius: 100%;
+    border: 1px solid #DBDBDB;
+    padding: 3px;
+}
+
+#hDestacadas a {
+    text-decoration: none;
+    color: black;
+}
+
+.hDestacada p {
+    padding-top: 5px;
+}
+
+.hDestacada {
+
+    padding-left: 40px;
+}
+
+/*-------------------------- CONTENIDO--------------------------------*/
+
+.tituloContenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 53px;
+    width: 935px;
+    margin-left: 100px;
+}
+
+.tituloContenido img {
+
+    width: 15px;
+    height: 15px;
+    margin-bottom: 3px;
+}
+
+.tituloContenido h3 {
+    font-size: 0.8rem;
+    margin-right: 50px;
+}
+
+.contenidoImagenes {
+    cursor: pointer;
+    width: 935px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.conteinerImg {
+    display: flex;
+    width: 100%;
+
+}
+
+.divImagenes {
+    position: relative;
+    margin-bottom: 30px;
+    margin-right: 30px;
+
+}
+
+.contenidoImagenes img {
+    width: 293px;
+    height: 293px;
+    transition: all 500ms ease-out;
+}
+
+.divImagenes .imgCapa {
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.26);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    justify-content: center;
+}
+
+.divImagenes .imgCapa a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.divImagenes .imgCapa a i {
+    margin-right: 10px;
+}
+
+.divImagenes:hover>.imgCapa {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.divImagenes:hover>.imgCapa p {
+    opacity: 1;
+    margin-top: 45%;
+}
+
+.divImagenes .imgCapa p {
+    font-size: 1.1rem;
+    color: #ffff;
+    padding-right: 30px;
+}
+
+/*--------------------------POPUP------------------*/
+
+.containerAll {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+    flex-direction: row;
+    opacity: 0;
+}
+
+.containerAll:target {
+    background-color: #474747ee;
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.closedPopup a {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 110%;
+}
+
+.contenidoPopup {
+    width: 1050px;
+    height: 600px;
+    background-color: #0095f6;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.comentariosPopup::-webkit-scrollbar {
+    width: 0;
+}
+
+.comentariosPopup {
+    overflow-y: overlay;
+    overflow-x: hidden;
+    width: 45%;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.encabezadoComentarios {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    position: fixed;
+    z-index: 1;
+    width: 450px;
+    height: 70px;
+    background-color: #FBFBFA;
+    border-bottom: 0.1px solid #e6e5e5;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.encabezadoComentarios .veryficado {
+    width: 17px;
+    height: 17px;
+    margin-bottom: 14px;
+    margin-right: 7px;
+}
+
+.iconoPerfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 1px solid #DBDBDB;
+    margin: 15px 15px 15px 15px;
+}
+
+.tituloEncabezado {
+    margin-top: 25px;
+    margin-right: 5px;
+    line-height: 20px;
+}
+
+.encabezadoComentarios a {
+    text-decoration: none;
+    margin-left: 7px;
+    margin-bottom: 14px;
+
+}
+
+.encabezadoComentarios span {
+    font-size: 0.7rem;
+}
+
+.encabezadoComentarios a:hover {
+    color: black;
+}
+
+.encabezadoComentarios i {
+    margin-left: 200px;
+    font-size: 1.5rem;
+}
+
+.iconoPerfil-1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 1px solid #DBDBDB;
+    margin: 15px 15px 15px 15px;
+}
+
+.comentario-1 {
+    position: relative;
+    display: flex;
+    text-align: start;
+    width: 471px;
+    margin-top: 10px;
+}
+
+.comentario-1 .tituloEncabezado {
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.comentario-1 span {
+    font-size: 0.7rem;
+
+}
+
+.comentario-1 .veryficado {
+    width: 17px;
+    height: 17px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+}
+
+.likes {
+    border-top: 1px solid #e6e5e5;
+    border-bottom: 1px solid #e6e5e5;
+    background-color: #FBFBFA;
+    position: fixed;
+    width: 450px;
+    top: 485px;
+}
+
+.contenedorIconosLike {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorIconosLike .icons {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.contenedorIconosLike .contenedorIconosLikeGuardar {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.likes .iconosLikes {
+    width: 25px;
+    height: 25px;
+}
+
+.cantidadLikes {
+    display: flex;
+    text-align: start;
+    align-items: start;
+    margin-left: 18px;
+}
+
+.contenedorCantidad .cantidadLikes img {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 2px solid #FBFBFA;
+    margin-right: 10px;
+}
+
+.contenedorCantidad .cantidadLikes p {
+    font-size: 0.9rem;
+}
+
+.contenedorCantidad .cantidadLikes span {
+    font-size: 0.6rem;
+}
+
+.comentar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 593px;
+    background-color: #FBFBFA;
+    margin: 0;
+    text-align: start;
+    height: 50px;
+    width: 450px;
+    border-radius: 0px 0px 5px 0px;
+    border-top: 1px solid #e6e5e5;
+}
+
+.comentar i {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.comentar input {
+    border: none;
+    background-color: #FBFBFA;
+    margin-left: 15px;
+    outline: none;
+}
+
+.comentar button {
+    margin-left: 130px;
+    border: none;
+}
